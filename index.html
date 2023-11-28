@@ -10,24 +10,38 @@
 <body>
     <div class="background-blur"></div>
     <div class="container">
-        <h1 class="title">Currency Converter</h1>
-        <div class="enter">
-            <span>Enter Amount</span>
-            <input type="text" name="amount" id="amount" placeholder="Enter Amount">
-        </div>
-        <div class="from-to">
-            <span>From</span>
-            <select name="currency_from" id="currency_from"></select>
-            <i class='bx bx-transfer'></i>
-            <span>To</span>
-            <select name="currency_to" id="currency_to"></select>
-        </div>
-        <div class="exchange">
-            <span></span>
-        </div>
-        <div class="button">
-            <button type="button">Get Exchange Rate</button>
-        </div>
+        <header>Currency Converter</header>
+        <form action="#">
+            <div class="amount">
+                <span>Enter Amount</span>
+                <input type="text" value="1">
+            </div>
+            <div class="drop-list">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-box">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="flag">
+                        <select>
+                            <option value="USD">USD</option>
+                            <option value="BRL">BRL</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="icon"><i class='bx bx-transfer'></i></div>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-box">
+                        <img src="https://flagsapi.com/BR/flat/64.png" alt="flag">
+                        <select>
+                            <option value="USD">USD</option>
+                            <option value="BRL">BRL</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="exchange-rate">1 USD =  5.25 BRL</div>
+        <button type="button">Get Exchange Rate</button>
     </div>
 </body>
 </html>
