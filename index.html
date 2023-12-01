@@ -6,7 +6,6 @@
     <title>Currency Converter</title>
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="js/script.js" defer></script>
 </head>
 <body>
     <div class="background-blur"></div>
@@ -22,10 +21,7 @@
                     <p>From</p>
                     <div class="select-box">
                         <img src="https://flagsapi.com/US/flat/64.png" alt="flag">
-                        <select>
-                            <option value="USD">USD</option>
-                            <option value="BRL">BRL</option>
-                        </select>
+                        <select></select>
                     </div>
                 </div>
                 <div class="icon"><i class='bx bx-transfer'></i></div>
@@ -33,16 +29,16 @@
                     <p>To</p>
                     <div class="select-box">
                         <img src="https://flagsapi.com/BR/flat/64.png" alt="flag">
-                        <select>
-                            <option value="USD">USD</option>
-                            <option value="BRL">BRL</option>
-                        </select>
+                        <select></select>
                     </div>
                 </div>
             </div>
-            <div class="exchange-rate">1 USD =  5.25 BRL</div>
+            <div class="exchange-rate"></div>
             <button type="button">Get Exchange Rate</button>
         </form>
     </div>
 </body>
+<script src="js/api-key.js"></script>
+<script src="js/country-list.js"></script>
+<script src="js/script.js"></script>
 </html>
